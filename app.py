@@ -14,7 +14,7 @@ def load_filter_keywords():
         return json.load(file)["keywords"]
 
 # Fungsi untuk memeriksa keamanan prompt menggunakan embeddings
-def is_prompt_safe_with_embeddings(prompt, keywords, threshold=0.5):
+def is_prompt_safe_with_embeddings(prompt, keywords, threshold=0.3):
     prompt_embedding = model.encode(prompt, convert_to_tensor=True)
     keyword_embeddings = model.encode(keywords, convert_to_tensor=True)
     similarities = util.cos_sim(prompt_embedding, keyword_embeddings)
