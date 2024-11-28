@@ -1,0 +1,50 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# macOS system files
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# PyTest cache files
+.cache/
+
+# Python egg
+*.egg
+*.egg-info/
+dist/
+build/
+*.wheel
+
+# MyPy cache
+.mypy_cache/
+
+# Temporary or compiled files
+*.bak
+*.tar.gz
+*.zip
+
+# Gradio generated files (if applicable)
+gradio/
